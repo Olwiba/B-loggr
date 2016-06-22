@@ -22,10 +22,12 @@ app.get('/', function (req, res) {
 });
 
 app.get('/home', function (req, res) {
-  res.send('Welcome to the Home Page!')
+  res.render('landing-page')
 });
 
-
+app.get('/login', function (req, res) {
+  res.send('Welcome to the login page :)')
+});
 
 app.listen(8109, function () {
 	console.log('--------------------------------------------------'.cyan);
